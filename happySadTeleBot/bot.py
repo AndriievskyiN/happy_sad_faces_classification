@@ -1,10 +1,13 @@
-from ast import arguments
 from aiogram import Bot, Dispatcher, executor, types
-from classifier import classifyImage
+
 import matplotlib.pyplot as plt
 import os
 
-bot = Bot(token="5346782906:AAGuSoPx1rBt1xDSjI7LQVeVDvzo0ewWY84")
+from token import TOKEN
+from classifier import classifyImage
+
+
+bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
 
 
